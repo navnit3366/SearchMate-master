@@ -1,0 +1,10 @@
+The most basic Ansi escape codes are those involved in rendering text. These let you add decorations like Colors, Background Colors or other Decorations to your printed text, but don't do anything fancy. The text you print will still end up at the bottom of the terminal, and still make your terminal scroll, just now it will be colored text instead of the default black/white color scheme your terminal has.
+
+Colors
+The most basic thing you can do to your text is to color it. The Ansi colors all look like
+
+Red: \u001b[31m
+Reset: \u001b[0m
+This \u001b character is the special character that starts off most Ansi escapes; most languages allow this syntax for representing special characters, e.g. Java, Python and Javascript all allow the \u001b syntax.
+
+For example here is printing the string "Hello World", but red:
